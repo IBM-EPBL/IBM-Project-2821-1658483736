@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Kidney Disease Result</title>
+</head>
+
+<body>
+
+    <div style="color:black;" class="container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 class='container-heading'><span class="heading_font">Chronic Kidney Disease Prediction</span></h2>
+
+        <br><br><br><br>
+
+        <!-- Result -->
+		<div style="color:black;" class="results">
+			{% if prediction==1 %}
+				<h1><span class='danger'>Oops! 🙁<br><br>You have CHRONIC KIDNEY DISEASE.<br><br>Please Consult Doctor.</span></h1>
+                <br><br><br><br><br><br>
+				
+			{% elif prediction==0 %}
+				<h1><span class='safe'>🎉 Congratulation! 🎉<br><br>You DON'T have Chronic Kidney Disease.</span></h1>
+				
+			{% endif %}
+		</div>
+        </form>
+
+    </div>
+    <div>
+            <br><br> <br><br><br><br><br><br><br><br>
+
+            <p class='footer-description'>IBM PROJECT done by PNT2022TMID01191</p>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
