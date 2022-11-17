@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chronic Kidney Disease Model</title>
+
+</head>
+<body>
+    <div style="color:black;" class="container">
+        <h2 class='container-heading'><span class="heading_font">Chronic Kidney Disease Prediction</span></h2>
+    </div>
+
+    <div style="color:black;" class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <br>
+            <h3>Specific Gravity</h3>
+            <input id="first" name="sg" placeholder="Ex: (1.005,1.010,1.015,1.020,1.025)" required="required">
+            <br>
+            <h3>Hyper Tension</h3>
+            <input id="second" name="htn" placeholder="Yes = 1, No=0" required="required">
+            <br>
+            <h3>Hemoglobin</h3>
+            <input id="third" name="hemo" placeholder="in gms" required="required">
+            <br>
+            <h3>Diabetes Mellitus</h3>
+            <input id="fourth" name="dm" placeholder="Yes = 1, No=0" required="required">
+            <br>
+            <h3>Albumin</h3>
+            <input id="fifth" name="al" placeholder="(0,1,2,3,4,5)" required="required">
+            <br>
+            <h3>Appetite</h3>
+            <input id="sixth" name="appet" placeholder="Good = 1, Poor = 0" required="required">
+            <br>
+            <h3>Red Blood Cell Count</h3>
+            <input id="seventh" name="rc" placeholder="in Millions/cmm" required="required">
+            <h3>Pus Cell</h3>
+            <input id="eight" name="pc" placeholder="Normal = 0, Abnormal = 1" required="required">
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class='footer-description'>IBM PROJECT done by PNT2022TMID01191</p>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
